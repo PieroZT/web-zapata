@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#titulo{
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
