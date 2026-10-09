@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function reiniciarTemporizador() {
         clearInterval(temporizador);
-        temporizador = setInterval(siguiente, 5000);
+        temporizador = setInterval(siguiente, 3000);
     }
 
     botonSiguiente.addEventListener("click", function () {
@@ -44,13 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
     botonAnterior.addEventListener("click", function () {
         anterior();
         reiniciarTemporizador();
-    });
-
-    indicadores.forEach(function (indicador, indice) {
-        indicador.addEventListener("click", function () {
-            mostrarDiapositiva(indice);
-            reiniciarTemporizador();
-        });
     });
 
     reiniciarTemporizador();
