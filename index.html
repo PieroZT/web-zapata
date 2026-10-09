@@ -1,20 +1,452 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/estilos.css">
-</head>
-<body>
-    <h1 id="titulo">PELICULAS</h1>
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus expedita aliquid molestias neque necessitatibus quisquam natus eligendi laudantium, doloribus velit blanditiis eaque. Similique cum vel vitae provident laboriosam ea tempore.
-    </p>
+    <meta name="description" content="Explora las películas, héroes y fases del Universo Cinematográfico de Marvel.">
 
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, maxime sapiente voluptas quis numquam ipsa consectetur officiis voluptatum deserunt repudiandae hic culpa ipsam consequatur nisi ad! Sunt sed fugiat magnam?
-    </p>
-    
+    <title>UCM Marvel | Universo Cinematográfico</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funciones.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header id="inicio">
+        <nav class="navegacion">
+
+            <a href="#inicio" class="logo">
+                UCM <span>MARVEL</span>
+            </a>
+
+            <ul class="menu" id="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#peliculas">Películas</a></li>
+                <li><a href="#fases">Fases</a></li>
+                <li><a href="#estrenos">Tabla de películas</a></li>
+                <li><a href="#proximos-estrenos">Próximos estrenos</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- CARRUSEL DE IMÁGENES -->
+        <section class="carrusel" aria-label="Contenido destacado del UCM">
+
+            <article class="diapositiva activa">
+                <img src="images/multiverso.webp"
+                     alt="Imagen del multiverso Marvel">
+
+                <div class="texto-carrusel">
+                    <p class="etiqueta">UNIVERSO CINEMATOGRÁFICO</p>
+
+                    <h1>EL MULTIVERSO TE ESPERA</h1>
+
+                    <p>
+                        Descubre las historias, los héroes y las aventuras
+                        que conectan el universo Marvel.
+                    </p>
+
+                    <a href="#peliculas" class="boton">
+                        Explorar películas
+                    </a>
+                </div>
+            </article>
+
+            <article class="diapositiva">
+                <img src="images/heroes.jpeg"
+                     alt="Héroes del universo Marvel">
+
+                <div class="texto-carrusel">
+                    <p class="etiqueta">HÉROES Y LEYENDAS</p>
+
+                    <h2>UN UNIVERSO DE POSIBILIDADES</h2>
+
+                    <p>
+                        Cada película revela una nueva parte
+                        de una historia mucho más grande.
+                    </p>
+
+                    <a href="#fases" class="boton">
+                        Descubrir las fases
+                    </a>
+                </div>
+            </article>
+
+            <article class="diapositiva">
+                <img src="images/universo.jpg"
+                     alt="Galaxia del universo Marvel">
+
+                <div class="texto-carrusel">
+                    <p class="etiqueta">EL DESTINO DEL UNIVERSO</p>
+
+                    <h2>MUCHAS HISTORIAS, UN SOLO UNIVERSO</h2>
+
+                    <p>
+                        Conoce las películas que marcaron
+                        una época del cine de superhéroes.
+                    </p>
+
+                    <a href="#estrenos" class="boton">
+                        Ver películas
+                    </a>
+                </div>
+            </article>
+
+            <!-- BOTONES DEL CARRUSEL -->
+            <button class="flecha anterior" type="button"
+                    aria-label="Diapositiva anterior">
+                &#10094;
+            </button>
+
+            <button class="flecha siguiente" type="button"
+                    aria-label="Diapositiva siguiente">
+                &#10095;
+            </button>
+
+            <!-- INDICADORES DEL CARRUSEL -->
+            <div class="indicadores">
+                <button class="indicador activo" type="button"
+                        aria-label="Mostrar diapositiva 1"></button>
+
+                <button class="indicador" type="button"
+                        aria-label="Mostrar diapositiva 2"></button>
+
+                <button class="indicador" type="button"
+                        aria-label="Mostrar diapositiva 3"></button>
+            </div>
+
+        </section>
+
+        <!-- PELÍCULAS DESTACADAS -->
+        <section id="peliculas" class="seccion">
+
+            <p class="etiqueta">HISTORIAS LEGENDARIAS</p>
+
+            <h2>Películas destacadas</h2>
+
+            <p class="descripcion">
+                Descubre algunas de las películas más representativas
+                del Universo Cinematográfico de Marvel.
+            </p>
+
+            <div class="contenedor-peliculas">
+
+                <article class="tarjeta">
+                    <img src="images/avengers.webp"
+                         alt="Los Vengadores"
+                         loading="lazy">
+
+                    <div class="contenido-tarjeta">
+                        <span class="categoria">VENGADORES</span>
+
+                        <h3>Los Vengadores</h3>
+
+                        <p>
+                            Un grupo de héroes se une para proteger
+                            la Tierra frente a amenazas extraordinarias.
+                        </p>
+
+                        <a href="#estrenos">Ver en la tabla</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="images/guardianes.jpg"
+                         alt="Guardianes de la Galaxia"
+                         loading="lazy">
+
+                    <div class="contenido-tarjeta">
+                        <span class="categoria">AVENTURA CÓSMICA</span>
+
+                        <h3>Guardianes de la Galaxia</h3>
+
+                        <p>
+                            Un grupo de aventureros viaja por el espacio
+                            y se enfrenta a peligros inesperados.
+                        </p>
+
+                        <a href="#fases">Explorar las fases</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="images/doctor-strange.webp"
+                         alt="Doctor Strange"
+                         loading="lazy">
+
+                    <div class="contenido-tarjeta">
+                        <span class="categoria">MAGIA Y DIMENSIONES</span>
+
+                        <h3>Doctor Strange</h3>
+
+                        <p>
+                            Un neurocirujano descubre las artes místicas
+                            y las posibilidades de otras dimensiones.
+                        </p>
+
+                        <a href="#proximos-estrenos">Ver próximos estrenos</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- FASES DEL UCM -->
+        <section id="fases" class="seccion fases">
+
+            <p class="etiqueta">EL ORDEN DE LA HISTORIA</p>
+
+            <h2>Fases del UCM</h2>
+
+            <p class="descripcion">
+                El universo cinematográfico está organizado
+                en distintas etapas narrativas.
+            </p>
+
+            <div class="contenedor-fases">
+
+                <article class="fase">
+                    <span class="numero-fase">01</span>
+
+                    <h3>Fase 1</h3>
+
+                    <p>
+                        Presenta a varios héroes y culmina con
+                        la primera gran reunión de los Vengadores.
+                    </p>
+
+                    <p class="peliculas-fase">
+                        Iron Man · Thor · Capitán América · Los Vengadores
+                    </p>
+                </article>
+
+                <article class="fase">
+                    <span class="numero-fase">02</span>
+
+                    <h3>Fase 2</h3>
+
+                    <p>
+                        Expande el universo, introduce nuevos personajes
+                        y amplía las amenazas.
+                    </p>
+
+                    <p class="peliculas-fase">
+                        Iron Man 3 · Guardianes de la Galaxia · Ant-Man
+                    </p>
+                </article>
+
+                <article class="fase">
+                    <span class="numero-fase">03</span>
+
+                    <h3>Fase 3</h3>
+
+                    <p>
+                        Reúne múltiples historias en un conflicto
+                        que cambia el destino del universo.
+                    </p>
+
+                    <p class="peliculas-fase">
+                        Civil War · Infinity War · Endgame
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- TABLA DE PELÍCULAS -->
+        <section id="estrenos" class="seccion">
+
+            <p class="etiqueta">GUÍA CINEMATOGRÁFICA</p>
+
+            <h2>Películas del UCM</h2>
+
+            <p class="descripcion">
+                Conoce algunas películas y sus años de estreno.
+            </p>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Película</th>
+                            <th>Año</th>
+                            <th>Fase</th>
+                            <th>Género</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Iron Man</td>
+                            <td>2008</td>
+                            <td>Fase 1</td>
+                            <td>Acción</td>
+                        </tr>
+
+                        <tr>
+                            <td>Los Vengadores</td>
+                            <td>2012</td>
+                            <td>Fase 1</td>
+                            <td>Acción y aventura</td>
+                        </tr>
+
+                        <tr>
+                            <td>Guardianes de la Galaxia</td>
+                            <td>2014</td>
+                            <td>Fase 2</td>
+                            <td>Ciencia ficción</td>
+                        </tr>
+
+                        <tr>
+                            <td>Capitán América: Civil War</td>
+                            <td>2016</td>
+                            <td>Fase 3</td>
+                            <td>Acción</td>
+                        </tr>
+
+                        <tr>
+                            <td>Avengers: Infinity War</td>
+                            <td>2018</td>
+                            <td>Fase 3</td>
+                            <td>Ciencia ficción</td>
+                        </tr>
+
+                        <tr>
+                            <td>Avengers: Endgame</td>
+                            <td>2019</td>
+                            <td>Fase 3</td>
+                            <td>Aventura</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="nota">
+                Los años corresponden al estreno original en cines.
+            </p>
+
+        </section>
+
+        <!-- PRÓXIMOS ESTRENOS -->
+        <section id="proximos-estrenos" class="seccion">
+
+            <p class="etiqueta">GUÍA CINEMATOGRÁFICA</p>
+
+            <h2>Próximos estrenos</h2>
+
+            <p class="descripcion">
+                Conoce algunos de los próximos estrenos.
+            </p>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Película</th>
+                            <th>Año</th>
+                            <th>Género</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Avengers: Doomsday</td>
+                            <td>2026</td>
+                            <td>Acción y aventura</td>
+                        </tr>
+
+                        <tr>
+                            <td>Avengers: Secret Wars</td>
+                            <td>2027</td>
+                            <td>Acción y aventura</td>
+                        </tr>
+
+                        <tr>
+                            <td>X-Men</td>
+                            <td>2028</td>
+                            <td>Acción y aventura</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ghost Rider</td>
+                            <td>2028</td>
+                            <td>Acción y aventura</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="nota">
+                Las fechas de esta tabla son orientativas y pueden cambiar.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <div class="contenido-footer">
+
+            <section>
+                <h2>UCM <span>MARVEL</span></h2>
+
+                <p>
+                    Un espacio para los fans del universo
+                    cinematográfico de Marvel.
+                </p>
+            </section>
+
+            <section>
+                <h3>Contacto</h3>
+
+                <p>Correo: contacto@ucmmarvel.com</p>
+
+                <p>Proyecto académico de desarrollo web.</p>
+            </section>
+
+            <section>
+                <h3>Redes sociales</h3>
+
+                <div class="redes-sociales">
+                    <a href="https://www.instagram.com/marvel/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Instagram
+                    </a>
+
+                    <a href="https://www.youtube.com/@marvel"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        YouTube
+                    </a>
+
+                    <a href="https://www.facebook.com/Marvel/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Facebook
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 UCM Marvel - Proyecto académico realizado por
+            <span>Alessandro Zapata</span>.
+            Sitio de fans no oficial, sin afiliación con Marvel.
+        </p>
+
+    </footer>
+
 </body>
 </html>
