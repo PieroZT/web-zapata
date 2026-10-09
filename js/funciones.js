@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function reiniciarTemporizador() {
         clearInterval(temporizador);
-        temporizador = setInterval(siguiente, 3000);
+        temporizador = setInterval(siguiente, 2000);
     }
 
     botonSiguiente.addEventListener("click", function () {
